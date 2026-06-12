@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    max-width:1000px;
+    margin:40px auto;
+    padding:40px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    border-radius:25px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.4);
+    color:white;
+}
+
+h1{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:30px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+img{
+    display:block;
+    margin:0 auto;
+    width:380px;
+    max-width:100%;
+    border-radius:20px;
+    transition:0.5s;
+    cursor:pointer;
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+}
+
+img:hover{
+    transform:scale(1.08) rotate(-2deg);
+}
+
+h2{
+    text-align:center;
+    margin-top:30px;
+    font-size:42px;
+    color:#22c55e;
+    font-weight:bold;
+}
+
+p{
+    margin:30px 0;
+    text-align:center;
+    font-size:18px;
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+h3{
+    font-size:30px;
+    margin-bottom:20px;
+    padding-left:15px;
+    border-left:6px solid #38bdf8;
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    padding:18px 25px;
+    margin-bottom:15px;
+    border-radius:15px;
+    font-size:17px;
+    color:#f8fafc;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+ul li:hover{
+    transform:translateX(12px);
+    background:rgba(56,189,248,0.15);
+}
+
+button{
+    display:block;
+    margin:35px auto;
+    padding:16px 50px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,#06b6d4,#3b82f6);
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 10px 25px rgba(59,130,246,0.4);
+}
+
+button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(59,130,246,0.5);
+}
+
+button:active{
+    transform:scale(0.98);
+}
+
+@media(max-width:768px){
+
+    body{
+        margin:15px;
+        padding:20px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    h2{
+        font-size:30px;
+    }
+
+    h3{
+        font-size:24px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    img{
+        width:100%;
+    }
+
+    button{
+        width:100%;
+    }
+}

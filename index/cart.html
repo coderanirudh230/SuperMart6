@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../style/cart.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>🛒 My Cart</h1>
+</div>
+
+<!-- CART ITEMS -->
+<div class="cart-container" id="cartContainer"></div>
+
+<!-- SUMMARY BOX -->
+<div class="cart-summary">
+    <h2>Total Amount: ₹<span id="totalAmount">0</span></h2>
+
+    <button onclick="buyNow()" class="buy-btn">
+        Buy Now 💳
+    </button>
+</div>
+
+<script src="../js/cart.js"></script>
+
+</body>
+</html>

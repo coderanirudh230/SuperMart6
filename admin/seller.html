@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Management</title>
+
+    <link rel="stylesheet" href="../admincss/adminsel.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="../admin/dashboard.html">📊 Dashboard</a>
+        <a href="../admin/product.html">🛒 Products</a>
+        <a href="../admin/order.html">📦 Orders</a>
+        <a href="../admin/user.html">👥 Users</a>
+        <a href="../admin/seller.html">🏪 Sellers</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <h1>Seller Management</h1>
+
+        <!-- Stats Cards -->
+        <div class="stats">
+
+            <div class="stat-card">
+                <h2>Total Sellers</h2>
+                <p id="totalSellers">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>Approved Sellers</h2>
+                <p id="approvedSellers">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>Pending Sellers</h2>
+                <p id="pendingSellers">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>Rejected Sellers</h2>
+                <p id="rejectedSellers">0</p>
+            </div>
+
+        </div>
+
+        <!-- Seller Table -->
+        <div class="card">
+
+            <h2>Seller List</h2>
+
+            <input
+                type="text"
+                id="searchSeller"
+                placeholder="Search Seller..."
+                onkeyup="searchSeller()"
+                style="
+                    width:100%;
+                    padding:12px;
+                    margin-bottom:20px;
+                    border:1px solid #ddd;
+                    border-radius:8px;
+                "
+            >
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Seller Name</th>
+                        <th>Email</th>
+                        <th>Store Name</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="sellerTable">
+
+                    <!-- Data loads here from adminseller.js -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="../adminjs/adminsel.js"></script>
+
+</body>
+</html>

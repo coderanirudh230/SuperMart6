@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#131921,#232f3e);
+}
+
+.login-box{
+    width:400px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.login-box h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.login-box input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+.login-box input:focus{
+    border-color:#ff9900;
+    box-shadow:0 0 8px rgba(255,153,0,0.4);
+}
+
+.login-box button{
+    width:100%;
+    padding:14px;
+    background:#ff9900;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-box button:hover{
+    background:#e68a00;
+    transform:translateY(-2px);
+}
+
+.login-box a{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    text-decoration:none;
+    color:#2874f0;
+}
+
+.signup{
+    margin-top:20px;
+}

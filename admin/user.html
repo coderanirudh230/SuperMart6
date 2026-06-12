@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+
+    <link rel="stylesheet" href="../admincss/adminuser.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="../admin/dashboard.html">📊 Dashboard</a>
+        <a href="../admin/product.html">📦 Products</a>
+        <a href="../admin/seller.html">🛍 Sellers</a>
+        <a href="../admin/user.html">👥 Users</a>
+        <a href="../admin/order.html">📋 Orders</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <h1>User Management</h1>
+
+        <!-- User Statistics -->
+        <div class="stats">
+
+            <div class="stat-card">
+                <h2>Total Users</h2>
+                <p id="totalUsers">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>Active Users</h2>
+                <p id="activeUsers">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>Blocked Users</h2>
+                <p id="blockedUsers">0</p>
+            </div>
+
+        </div>
+
+        <!-- User Table -->
+        <div class="card">
+            <h2>User List</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Joined Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <!-- Dynamic Table -->
+                <tbody id="userTable">
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="../adminjs/adminuser.js"></script>
+
+</body>
+</html>

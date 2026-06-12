@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../style/profile.css">
+</head>
+<body>
+<div class="profile-container">
+
+    <div class="profile-card">
+        <img src="../img/profile.jpg" alt="Profile Picture">
+
+        <h2 id="profileName"></h2>
+        <p id="profileEmail"></p>
+
+        <button onclick="editProfile()">Edit Profile</button>
+    </div>
+
+    <div class="details-card">
+        <h3>Account Details</h3>
+
+        <div class="detail">
+            <span>Full Name</span>
+            <strong id="fullName"></strong>
+        </div>
+
+        <div class="detail">
+            <span>Mobile Number</span>
+            <strong id="mobileNumber">Not added</strong>
+        </div>
+
+        <div class="detail">
+            <span>Address</span>
+            <strong id="address">Not added</strong>
+        </div>
+
+        <!-- <div class="detail">
+            <span>Orders</span>
+            <strong>12 Orders</strong>
+        </div>
+
+        <div class="detail">
+            <span>Wishlist</span>
+            <strong>8 Items</strong>
+        </div> -->
+    </div>
+
+</div>
+<script src="../js/profile.js"></script> 
+ </body>
+</html>

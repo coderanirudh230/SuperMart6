@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMart</title>
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">SuperMart</div>
+
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search products" onkeyup="searchProducts()">
+            <button>Search</button>
+        </div>
+
+        <div class="menu">
+            <a href="../index/login.html">Login</a>
+            <a href="../index/wishlist.html">❤️ Wishlist <span id="wishCount">0</span></a>
+            <a href="../index/cart.html">
+                🛒 Cart <span id="cartCount">0</span>
+            </a>
+            <a href="../index/Profile.html">Profile</a>
+            <a href="location.html">
+                📍 <span id="locationText">
+                    Select Delivery Address
+                </span>
+            </a>
+
+        </div>
+    </header>
+
+    <nav>
+        <a href="../index/main.html">Home</a>
+        <a href="../index/electronis.html">Electronics</a>
+        <a href="../index/fashion.html">Fashion</a>
+        <a href="../index/grocery.html">Grocery</a>
+        <a href="../index/mobile.html">Mobiles</a>
+        <a href="../index/book.html">Books</a>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>Biggest Sale of the Year</h1>
+            <p>Best Deals on Top Brands</p>
+            <button onclick="scrollToProducts()">
+                Shop Now
+            </button>
+        </div>
+    </section>
+
+    <h2 class="section-title">Shop By Category</h2>
+
+    <div class="categories">
+        <div class="category">📱 Mobiles</div>
+        <div class="category">💻 Laptops</div>
+        <div class="category">👕 Fashion</div>
+        <div class="category">🏠 Home</div>
+        <div class="category">🍎 Grocery</div>
+        <div class="category">🎮 Gaming</div>
+    </div>
+
+    <h2 class="section-title">Trending Products</h2>
+
+    <div class="products" id="productsSection">
+
+        <div class="product">
+            <a href="../index/iphone.html">
+                <img src="../img/ihone.jpg" alt="iphone 16">
+            </a>
+            <div class="product-info">
+                <h3>iPhone 16</h3>
+                <p class="price">
+                    <del>₹79,999</del><br>
+                    ₹67,999
+                </p>
+
+                <span class="discount">
+                    15% OFF
+                </span>
+                <button onclick="addToCart('iPhone 16',67999,'../img/ihone.jpg')">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="../index/laptop.html">
+                <img src="../img/laptop.jpg">
+            </a>
+            <div class="product-info">
+                <h3>Gaming Laptop</h3>
+                <p class="price">
+                    <del>₹89,999</del><br>
+                    ₹76,499
+                </p>
+
+                <span class="discount">
+                    15% OFF
+                </span>
+                <button onclick="addToCart('Gaming Laptop',76499,'../img/laptop.jpg')">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="../index/watch.html">
+                <img src="../img/watches.jpg">
+            </a>
+            <div class="product-info">
+                <h3>Smart Watch</h3>
+                <p class="price">
+                    <del>₹5,999</del><br>
+                    ₹4,999
+                </p>
+
+                <span class="discount">
+                    17% OFF
+                </span>
+                <button onclick="addToCart('Smart Watch',4999,'../img/watches.jpg')">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="../index/headphone.html">
+                <img src="../img/headphone.jpg">
+            </a>
+            <div class="product-info">
+                <h3>Headphones</h3>
+                <p class="price">
+                    <del>₹3,499</del><br>
+                    ₹2,999
+                </p>
+
+                <span class="discount">
+                    14% OFF
+                </span>
+                <button onclick="addToCart('Headphones',2999,'../img/headphone.jpg')">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="offer">
+        <h2>⚡ FLASH SALE</h2>
+        <p>Fashion Essentials at Flat 30% OFF</p>
+    </div>
+    <div class="flash-products">
+
+        <div class="flash-item">
+            <img src="../img/hoodies.jpg">
+
+            <h3>Winter Hoodie</h3>
+
+            <p>
+                <del>₹2499</del><br>
+                ₹1749
+            </p>
+
+            <span>30% OFF</span>
+        </div>
+
+        <div class="flash-item">
+            <img src="../img/shoes.jpg">
+
+            <h3>Sports Shoes</h3>
+
+            <p>
+                <del>₹2999</del><br>
+                ₹2099
+            </p>
+
+            <span>30% OFF</span>
+        </div>
+
+        <div class="flash-item">
+            <img src="../img/headphone.jpg">
+
+            <h3>Wireless Earbuds</h3>
+
+            <p>
+                <del>₹3999</del><br>
+                ₹2799
+            </p>
+
+            <span>30% OFF</span>
+        </div>
+
+    </div>
+    <footer>
+        <h3>SuperMart</h3>
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Successful</title>
+
+<link rel="stylesheet" href="../style/order-success.css">
+</head>
+<body>
+
+<div class="success-container">
+
+    <div class="checkmark">
+        ✓
+    </div>
+
+    <h1>Order Placed Successfully!</h1>
+    <h3 id="orderId"></h3>
+    <p id="orderDate"></p>
+    <p>
+        Thank you for shopping with SuperMart.
+        Your order has been confirmed.
+    </p>
+
+    <h3>Estimated Delivery: 3-5 Days</h3>
+    <div class="delivery-card">
+
+    <h3>Delivery Status</h3>
+
+    <p>📦 Order Confirmed</p>
+
+    <p>🚚 Preparing Shipment</p>
+
+    <p>🏠 Estimated Delivery: 3-5 Days</p>
+
+</div>
+
+    <div class="buttons">
+
+        <a href="../index/main.html" class="home-btn">
+            Continue Shopping
+        </a>
+
+        <a href="../index/cart.html" class="cart-btn">
+            Back To Cart
+        </a>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+
+confetti({
+    particleCount: 150,
+    spread: 100,
+    origin: { y: 0.6 }
+});
+
+let orderNumber =
+    "SM" + Date.now();
+
+document.getElementById("orderId")
+.innerText =
+"Order ID: #" + orderNumber;
+
+let today = new Date();
+
+document.getElementById("orderDate")
+.innerText =
+"Order Date: " +
+today.toLocaleDateString();
+
+</script>
+</body>
+</html>

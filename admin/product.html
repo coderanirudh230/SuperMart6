@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+
+    <link rel="stylesheet" href="../admincss/adminprod.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="dashbard.html">Dashboard</a>
+        <a href="product.html">Product</a>
+        <a href="order.html">Order</a>
+        <a href="seller.html">Seller</a>
+        <a href="user.html">Users</a>
+    </div>
+
+    <div class="main-content">
+
+        <h1>Product Management</h1>
+
+        <!-- Add Product -->
+        <div class="card">
+
+            <h2>Add Product</h2>
+
+            <input
+                type="text"
+                id="productName"
+                placeholder="Product Name"
+            >
+
+            <input
+                type="number"
+                id="productPrice"
+                placeholder="Product Price"
+            >
+
+            <input
+                type="text"
+                id="productCategory"
+                placeholder="Category"
+            >
+
+            <input
+                type="url"
+                id="productImage"
+                placeholder="Image URL"
+            >
+
+            <button onclick="addProduct()">
+                Add Product
+            </button>
+
+        </div>
+
+        <!-- Product List -->
+        <div class="card">
+
+            <h2>Product List</h2>
+
+            <table border="1" width="100%">
+
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="productTable">
+                    <!-- Products will load here -->
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="../adminjs/adminprod.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    display: flex;
+    background: #f4f6f9;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #111827;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #2563eb;
+}
+
+/* DASHBOARD MAIN */
+.dashboard {
+    margin-left: 220px;
+    padding: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* CARD TEXT */
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2563eb;
+}

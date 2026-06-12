@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Summary</title>
+
+<link rel="stylesheet" href="../style/Payment.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Payment Summary</h2>
+
+<!-- ✅ DELIVERY ADDRESS SECTION -->
+<div id="savedAddress"></div>
+
+<table>
+<tr>
+<th>Product</th>
+<th>Qty</th>
+<th>Price</th>
+</tr>
+
+<tbody id="paymentItems"></tbody>
+
+</table>
+
+<div class="summary">
+
+<p>
+<span>Subtotal:</span>
+<span id="subtotal">₹0</span>
+</p>
+
+<p>
+<span>Delivery Charge:</span>
+<span id="delivery">₹50</span>
+</p>
+
+<p>
+<span>GST:</span>
+<span id="gst">₹0</span>
+</p>
+
+<p class="total">
+<span>Total Amount:</span>
+<span id="totalAmount">₹0</span>
+</p>
+
+</div>
+
+<div class="payment-method">
+<h3>Select Payment Method</h3>
+
+<label>
+<input type="radio" name="payment">
+UPI
+</label><br><br>
+
+<label>
+<input type="radio" name="payment">
+Credit/Debit Card
+</label><br><br>
+
+<label>
+<input type="radio" name="payment">
+Cash on Delivery
+</label>
+
+</div>
+
+<br>
+
+<button onclick="confirmOrder()">
+Confirm & Pay
+</button>
+
+</div>
+
+<script src="../js/Payment.js"></script>
+
+</body>
+</html>
